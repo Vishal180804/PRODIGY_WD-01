@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img.jpg");
+}
+.container{
+    max-width: 80vw;
+    
+}
+.navbar{
+    background-color: black;
+    list-style: none;
+    position: fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 15px 0px;
+}
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
+
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(42, 176, 200);
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNavigationBar a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: green;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+    background-color: black;
+    color:white;
+}
+
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:  rgb(42, 176, 200);
+    padding: 5px 25px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    
+}
+.nav-link:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.min-h-screen{
+    min-height: 100vh;
+}
+.sec1,.sec2,.sec3,.sec4{
+    color: #d2d644;
+    background-color: transparent;
+    margin: 10px;
+    padding: 50px;
+    
+}
+.m-sec{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    color: #f52525;
+}
