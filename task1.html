@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Landing Page</title>
     <link rel="stylesheet" href="task1.css">
-    <!-- <link rel="stylesheet" href="util.css"> -->
+    
     <script src="task1.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <header>
             <nav>
                 <span class="sideMenuButton" onclick="openNavbar()">
                     &#9776</span>
-                    <ul class="navbar">
-                        <li><a href="#" class="nav-link">Home</a></li>
-                        <li><a href="#" class="nav-link">About </a></li>
-                        <li><a href="#" class="nav-link">Services</a></li>
-                        <li><a href="#" class="nav-link">Contact Us</a></li>
-                    </ul>
+                <ul class="navbar">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About </a></li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                </ul>
             </nav>
             <div class="sideNavigationBar" id="sideNavigationBar">
                 <a href="#" class="closeButton" onclick="closeNavbar()">
@@ -32,41 +31,56 @@
                 <a href="#" class="nav-link">Services</a>
                 <a href="#" class="nav-link">Contact Us</a>
             </div>
-        </header>
+        
 
-        <main class="min-h-screen m-sec">
-            <section class="sec1">
-                <h1>Home</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis exercitationem quisquam
-                    temporibus dolorum ad tempora! Vitae cumque facilis quidem repudiandae ipsum. Quasi dicta, provident
-                    eligendi ex laboriosam eum odit non!</p>
+        <main>
+            <section class="home">
+                <div class="sec">
+                <h3>Home</h3>
+                <p>Hi, I'm Vishal. Welcome to my personal portfolio website where you can learn more about me, my
+                    projects, and how to get in touch with me. Explore the sections to see my work and feel free to
+                    reach out if you have any questions or opportunities!</p>
+                </div>
             </section>
-            <section class="sec2">
-                <h1>About</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda numquam optio ratione eos quam
-                    nulla velit, dolorum aperiam molestiae voluptas iusto id incidunt, amet reprehenderit asperiores
-                    alias molestias natus aspernatur.</p>
+            <section class="about">
+                <div class="sec">
+                <h3>About</h3>
+                <p>Hello! My name is Vishal. I am a passionate web developer with a love for creating dynamic and
+                    interactive web experiences. With a background in both front-end and back-end development, I
+                    specialize in building responsive and user-friendly websites.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, working on personal projects, or
+                    enjoying a good book.</p>
+                    </div>
             </section>
-            <section class="sec3">
-                <h1>Services</h1>
+            <section class="services">
+                <div class="sec">
+                <h3>Services</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, consequuntur. Similique porro nisi
                     voluptas perspiciatis corporis. Quo, ratione dolor aspernatur repellat tempora eveniet porro earum
                     illo possimus nesciunt similique aut.</p>
+                    </div>
             </section>
-            <section class="sec4">
+            <section class="contact">
                 <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ut sit numquam, cumque, culpa
-                    corrupti enim cum sequi quas facilis soluta amet voluptatibus fuga veniam praesentium iure aperiam!
-                    Mollitia, veniam.</p>
+                <div class="contact">
+                    <h3>Get in Touch</h3>
+                    <form action="mailto:vishal@example.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
-            <div class="footer">
-                <span>
-                    Created By<br>
-                    Vishal Vasava
-                </span>
-            </div>
+            <p>&copy; 2024 Vishal. All rights reserved.</p>
         </footer>
     </div>
     <script src="task1.js"></script>

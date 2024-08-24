@@ -1,26 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url("img.jpg");
-}
-.container{
-    max-width: 80vw;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f2f2f2;
     
 }
-.navbar{
-    background-color: black;
+
+
+
+.container {
+    max-width: 80vw;
+
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
     list-style: none;
     position: fixed;
-    top:0;
+    top: 0;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: auto;
-    padding: 15px 0px;
+    margin: 0;
+    padding: 1em;
 }
+
 @media screen and (max-width: 600px) {
     nav .sideMenuButton {
         display: flex;
@@ -68,7 +81,7 @@ body{
 
 .sideNavigationBar a:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
 
 .sideNavigationBar .closeButton {
@@ -79,32 +92,79 @@ body{
     margin-left: 50px;
 }
 
-.nav-link{
+.nav-link {
+    color: #fff;
     text-decoration: none;
-    color:  rgb(42, 176, 200);
-    padding: 5px 25px;
-    margin: 10px 20px;
-    border-radius: 5px;
-    
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 25px;
+
 }
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: white;
     color: rgb(0, 0, 0);
 }
-.min-h-screen{
-    min-height: 100vh;
+
+
+section {
+    padding: 2em;
 }
-.sec1,.sec2,.sec3,.sec4{
-    color: #d2d644;
-    background-color: transparent;
-    margin: 10px;
-    padding: 50px;
-    
+
+.contact {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 1em;
 }
-.m-sec{
-    margin: 0;
-    padding: 0;
+
+.contact h3 {
+    margin-top: 0;
 }
-.footer{
-    color: #f52525;
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 0.5em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+.sec {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
